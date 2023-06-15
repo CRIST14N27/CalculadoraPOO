@@ -24,6 +24,68 @@ namespace WPF_Calculadora
         {
             InitializeComponent();
         }
-        public void Button
+        public void ButtonClick (object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Button button = (Button)sender;
+                string value = (string)button.Content;
+                if(IsNumber(value))
+                {
+                    HandleNumber(value);
+                }
+                else if(IsOperator(value))
+                {
+                    HandleOperator(value);
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception ("Sucedio un error"+ex.Message);
+            }
+        }
+
+        //Metodos auxiliares
+        private bool IsNumber(string num)
+        {
+            //if(double.TryParse(num, out _))
+            //{
+            //    return true;
+            //}
+            //return false;
+            return double.TryParse(num, out _);
+        }
+        private void HandleNumber(string value)
+        {
+            if(string.IsNullOrEmpty(Screen.Text))
+            {
+                Screen.Text = value;
+            }
+            else
+            {
+                Screen.Text += value;
+            }
+        }
+        private bool IsOperator(string possibleOperator)
+        {
+            //if(possibleOperator == "+" || possibleOperator == "-"
+            //    || possibleOperator == "/" || possibleOperator == "*")
+            //{
+            //    return true;
+            //}
+            //return false;
+            return possibleOperator == "+" || possibleOperator == "-"
+               || possibleOperator == "/" || possibleOperator == "*";
+        }
+        private void HandleOperator(string value)
+        {
+            if(!String.IsNullOrEmpty(Screen.Text))
+            {
+                Screen.Text += value;
+            }
+        }
+        //XD?ghfhjjkkkkkhh
     }
 }

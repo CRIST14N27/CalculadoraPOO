@@ -23,7 +23,7 @@
         <Button x:Name="boton_1" Content="7" HorizontalAlignment="Left" Height="45" Margin="13,135,0,0" VerticalAlignment="Top" Width="47" RenderTransformOrigin="0.451,0.192" Background="#FFB4BAE8"/>
         <Button x:Name="boton_2" Content="4" HorizontalAlignment="Left" Height="44" Margin="11,190,0,0" VerticalAlignment="Top" Width="49" Background="#FFB4BAE8"/>
         <Button x:Name="boton_3" Content="1" HorizontalAlignment="Left" Height="45" Margin="11,243,0,0" VerticalAlignment="Top" Width="48" Background="#FFB4BAE8"/>
-        <Button x:Name="boton_4"  Content="8" HorizontalAlignment="Left" Height="44" Margin="71,136,0,0" VerticalAlignment="Top" Width="46" Click="boton_4_Click" Background="#FFB4BAE8"/>
+        <Button x:Name="boton_4"  Content="8" HorizontalAlignment="Left" Height="44" Margin="71,136,0,0" VerticalAlignment="Top" Width="46" Background="#FFB4BAE8"/>
         <Button x:Name="boton_5" Content="5" HorizontalAlignment="Left" Height="44" Margin="70,190,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.372,0.404" Background="#FFB4BAE8"/>
         <Button x:Name="boton_6" Content="2" HorizontalAlignment="Left" Height="45" Margin="70,243,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.537,1.032" Background="#FFB4BAE8"/>
         <Button x:Name="boton_7" Content="9" HorizontalAlignment="Left" Height="45" Margin="132,137,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="-2.125,-0.097" Background="#FFB4BAE8"/>
